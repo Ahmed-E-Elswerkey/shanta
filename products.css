@@ -1,0 +1,105 @@
+*{
+	padding:0;
+	margin:0;
+}
+html{
+    background:url("./back.jpg") fixed;
+    background-size:cover;
+}
+#container{
+    /*margin: 7%;*/
+    /*background: rgba(255, 255, 255, 1);*/
+    font-family: arial;
+    color: white;
+    /*padding: 1%;*/
+}
+#container tr,#container #table_style{
+    font-weight:bolder;
+    color: black;
+}
+
+#container form{
+   padding:5px;
+   margin:4px;
+}
+
+#container #m_h{display:table;margin:2% auto 2%;padding:10px;background:white;color:black !important;box-shadow:0 0 1px 0.1px black;}
+#container #m_h:hover{cursor:pointer;color:white !important;background:black;}
+
+#container table{
+    background: white;
+    box-shadow: 0 0 2px 0.1px black;
+}
+
+#table_style{
+    display:inline-block;
+    margin:1rem;
+    background: #336088;
+    padding: 0.5rem;
+    font-family: monospace;
+    font-weight: bolder;
+    box-shadow:0 0 2px 0.2px black;
+    border-radius:3px;
+}
+#table_style fieldset{
+    border:1px solid white;
+    padding:0.4rem;
+    text-align:center;
+    border-radius:3px;
+    /*background:rgb(221, 221, 221);*/
+}
+#table_style legend{
+    font-size:1.4rem;
+    color: white;
+}
+#table_style button{
+    background:transparent;
+    /*padding:0.5rem;*/
+    color:white;
+    margin:0.5rem;
+    font-weight:100;
+    border:0;
+    font-size:2rem;
+}
+#table_style button:hover{
+    cursor:pointer;
+}
+
+#market_name{
+    margin: 30% 1% 0;
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid white;
+    font-size: 34px;
+    font-family: "Lucida Console", Monaco, monospace;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color:white;
+    box-shadow:0 0 2px 0.2px black;
+    background:grey;
+}
+
+input[type='checkbox']{
+    height:1.3rem;
+    width:1.3rem;
+}    
+
+form input[type="text"],form input[type="number"]{
+    padding: 4px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0.2px #2f2f2f;
+    transition:0.3s;
+    margin:3px
+}
+input[type="text"]:focus,form input[type="number"]{
+    box-shadow: 0 0 7px 3px #2f2f2f;
+    outline:none;
+}
+
+@media screen and (max-width:1000px){
+        /*#container{margin:1%;}*/
+        #products_fill{text-align:center; text-align:-webkit-center;}
+        #products_fill input[type="text"]{margin:7px;padding:7px}
+        table *{padding:2px}
+}

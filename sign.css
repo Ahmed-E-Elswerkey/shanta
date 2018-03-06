@@ -1,0 +1,41 @@
+#body{
+	margin:15%;
+	padding:15px;
+    background: #ffffff6b;
+}
+
+#sign_up_d,#sign_in_d{
+    display:block;
+    text-align:center;
+    text-align: -webkit-center;
+    margin:auto;
+    padding:0.7rem;
+    animation:show 0.3s ease-in 1;
+}
+#sign_in_d{
+    border-top:1px groove #2b2b2b;
+}
+
+
+#sign_in_d button,#sign_up_d button{
+    background: rgba(0,0,0,0.5);
+    width: 10%;
+    margin: 10px;
+    padding:7px;
+    border:transparent;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+#sign_in_d input[type='submit'],#sign_up_d input[type='submit']{
+    margin:0.7rem auto;
+    font-size:1.2rem;
+}
+#sign_in_d button:focus,#sign_up_d button:focus{
+    outline:none;
+}
+
+#sign_up_d select[name="major"]::before{
+	content:"";
+	display:block;
+}

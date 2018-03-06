@@ -1,0 +1,124 @@
+#bags *{font-family:arial;}
+#bags{
+	margin:15%;
+	background:white;
+	border:5px solid black;
+	padding:15px;
+}
+.bag{
+	margin:3%;
+	border:4px solid #5454ea;
+	border-radius:2px;
+}
+.bag_label{
+	margin:0;
+	text-align:center;
+	text-align:-webkit-center;
+	padding:10px;
+	background:#5454ea;
+	color:white;
+	position: relative;
+	font-size:1.3rem;
+}
+.bag_label:before{
+	content:"\f290";
+    /*vertical-align: middle;*/
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right:0.2rem;
+}
+.market_bag{
+	border:3px solid #d43737;
+	border-radius:2px;
+	margin:2%;
+}
+.market_label{
+	padding:0.5rem 0;
+	background:#d43737;
+	color:white;
+	text-align:center;
+    position: relative;
+}
+.market_label a{
+    font-weight: bold;
+    background: white;
+    padding: 0.2rem;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    margin:1%;
+}
+.market_label:hover{
+	cursor:pointer;
+	background:#b52e2e;
+}
+.market_label:before{
+    content: "\f13a";
+    vertical-align: middle;
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 18px;
+}
+.market_label:after{
+    content: "\f13a";
+    vertical-align: middle;
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 18px;
+}
+
+td{
+	text-align:center;
+}
+tr:nth-of-type(last) td{
+	border-top:1px solid #2b2b2b;
+}
+
+#m_bags{
+	margin:3%;
+	padding:5px;
+}
+.m_bag:hover{
+	cursor:pointer;
+}
+.m_bag{
+	display:inline-block;
+	padding:10px;
+	border-radius:2px;
+	color:black;
+	background:white;
+	margin:1%;
+	font-weight:bold;
+	font-family: monospace;
+}
+.m_market_body{
+	display:none;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 37, 37, 0.72);
+    padding: 15%;
+    top: 0;
+    left: 0;
+    color:white;
+    font-weight:bold;
+    font-size:25px;
+}
+.bag_state{
+	text-align:center;
+	text-align:-webkit-center;
+	color:#2b2b2b;
+	background:white;
+	padding:2px;
+	margin:10% 0 0 0;
+	border-radius:2px;
+	border:2px solid black;
+}
+.Done{background:white; font-weight:bolder;color:#4bca4b;}
+.market_bag .bag_state{margin:1%;}
+
+@media screen and (max-width:1000px){
+	#bags{
+		margin:2%;
+	}
+}
