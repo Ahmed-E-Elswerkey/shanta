@@ -20,15 +20,15 @@
 
 </div>
 
-<script> 
-window.onload = setTimeout(function(){height11();},0);
-document.getElementsByTagName("body")[0].onclick = function(){setTimeout(function(){height11();},300);}
-function height11(){
-        var body = document.body,
-            html = document.documentElement;
-        var height =  html.scrollHeight || html.offsetHeight || document.getEleentsByTagName("html")[0].scrollHeight;
-            document.getElementById("footer").style.top = height - 40 + "px";
-    }
+    <script> 
+	window.onload = setTimeout(function(){height11();},0);
+	document.getElementsByTagName("body")[0].onclick = function(){setTimeout(function(){height11();},300);}
+	function height11(){
+		var body = document.body,
+		    html = document.documentElement;
+		var height =  html.scrollHeight || html.offsetHeight || document.getEleentsByTagName("html")[0].scrollHeight;
+		    document.getElementById("footer").style.top = height - 40 + "px";
+	    }
     </script>
 
 <script type="text/javascript" src="<?php echo $_SESSION['de']; ?>/js/index.js"></script>
